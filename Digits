@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package genesisq;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Dr.Stanley
+ */
+public class Digits {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+                Scanner input = new Scanner(System.in);
+                System.out.println("***This program will display a series of digits and put \"-\" if the digit is even ***");
+        int[] arrynum;
+  System.out.println("How many digits");
+         int s= input.nextInt();
+     arrynum= new int[s];
+      
+     int size= arrynum.length;
+     for(int i=0; i< size; i++) {
+         int e=i+1;
+         System.out.println("Input digit "+e);
+         int v=input.nextInt();
+        arrynum[i] = v;
+         
+     }
+        for(int x=0;x<size;x++){
+         
+         if(arrynum[x]%2==0){
+             System.out.print("-");
+             System.out.print(arrynum[x]);
+            
+         }
+         else{
+             System.out.print(arrynum[x]);
+         }
+     }
+
+        System.out.println();
+     
+    }
+    
+}
